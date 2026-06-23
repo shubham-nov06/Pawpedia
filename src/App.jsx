@@ -10,12 +10,10 @@ async function fetchPexelsImage(animalName) {
   if (imageCache[animalName]) return imageCache[animalName];
   try {
     const res = await fetch(
-      `https://api.pexels.com/v1/search?query=${encodeURIComponent(animalName + " animal")}&per_page=3&orientation=landscape`,
-      { headers: { Authorization: PEXELS_KEY } }
+      `https://api.pexels.com/v1/search?query=${encodeURIComponent(animalName + " animal pet wildlife")}&per_page=5&orientation=landscape`, { headers: { Authorization: PEXELS_KEY } }
     );
     const data = await res.json();
-    const url = data.photos?.[0]?.src?.large2x || data.photos?.[0]?.src?.large || null;
-    if (url) imageCache[animalName] = url;
+    const url = data.photos?.[1]?.src?.large2x || data.photos?.[0]?.src?.large2x || data.photos?.[0]?.src?.large || null; if (url) imageCache[animalName] = url;
     return url;
   } catch {
     return null;
