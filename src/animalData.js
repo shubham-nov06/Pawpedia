@@ -39,7 +39,7 @@ export const ANIMALS = [
   { id: 20, name: 'Dalmatian', category: 'dogs', emoji: '⚫', tagline: 'Spotted perfection in motion', image: w('d/d4/Dalmatiner_Hund.jpg/400px-Dalmatiner_Hund.jpg'), temp: '15–25°C', lifespan: '11–13 yrs', size: 'Large', origin: 'Croatia', tags: ['Energetic', 'Dignified', 'Smart'] },
 
   // CATS
-  { id: 21, name: 'Persian', category: 'cats', emoji: '🐱', tagline: 'Royalty draped in silken fur', image: w('1/15/White_Persian_Cat.jpg/400px-White_Persian_Cat.jpg'), temp: '18–26°C', lifespan: '12–17 yrs', size: 'Medium', origin: 'Persia', tags: ['Calm', 'Gentle', 'Regal'] },
+  { id: 21, name: 'Persian Cat', category: 'cats', emoji: '🐱', tagline: 'Royalty draped in silken fur', image: w('1/15/White_Persian_Cat.jpg/400px-White_Persian_Cat.jpg'), temp: '18–26°C', lifespan: '12–17 yrs', size: 'Medium', origin: 'Persia', tags: ['Calm', 'Gentle', 'Regal'] },
   { id: 22, name: 'Maine Coon', category: 'cats', emoji: '🦁', tagline: 'The dog of the cat world', image: w('5/5f/Maine_Coon_cat_by_Tomitheos.JPG/400px-Maine_Coon_cat_by_Tomitheos.JPG'), temp: '15–24°C', lifespan: '12–15 yrs', size: 'Large', origin: 'USA', tags: ['Friendly', 'Playful', 'Tufted'] },
   { id: 23, name: 'Siamese', category: 'cats', emoji: '💙', tagline: 'Vocal, vivid, and utterly captivating', image: w('2/25/Siam_lilacpoint.jpg/400px-Siam_lilacpoint.jpg'), temp: '18–26°C', lifespan: '12–20 yrs', size: 'Medium', origin: 'Thailand', tags: ['Vocal', 'Social', 'Elegant'] },
   { id: 24, name: 'British Shorthair', category: 'cats', emoji: '🧸', tagline: 'The Cheshire cat in real life', image: w('9/9d/Britishblue.jpg/400px-Britishblue.jpg'), temp: '15–24°C', lifespan: '12–20 yrs', size: 'Medium', origin: 'UK', tags: ['Calm', 'Independent', 'Round'] },
