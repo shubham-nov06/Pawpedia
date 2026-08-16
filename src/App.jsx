@@ -213,9 +213,9 @@ function MeshBg() {
 function Navbar({ favCount, onFavClick }) {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", fn);
-    return () => window.removeEventListener("scroll", fn);
+    const handler = () => setShowMap(true);
+    window.addEventListener('openMap', handler);
+    return () => window.removeEventListener('openMap', handler);
   }, []);
 
   return (
@@ -910,7 +910,7 @@ function Footer() {
 // ── App ───────────────────────────────────────────────────────────────────────
 export default function App() {
   const [favorites, setFavorites] = useState([]);
-  
+
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
   const [selectedAnimal, setSelectedAnimal] = useState(null);
@@ -925,7 +925,7 @@ export default function App() {
 
   useEffect(() => {
     const style = document.createElement("style");
-    
+
     style.innerHTML = GLOBAL_CSS;
     document.head.appendChild(style);
     return () => document.head.removeChild(style);
