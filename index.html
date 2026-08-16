@@ -1,14 +1,66 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pawpedia — The World's Animal Encyclopedia</title>
-    <meta name="description" content="Explore 105+ animals with AI-powered care guides. Dogs, cats, birds, reptiles, marine life and more." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Primary SEO -->
+  <title>Pawpedia — The World's Animal Encyclopedia | Built by Shubham</title>
+  <meta name="description"
+    content="Pawpedia is an AI-powered animal encyclopedia with 105+ animals. Explore dogs, cats, birds, reptiles, marine life and more. Built by Shubham." />
+  <meta name="keywords"
+    content="animal encyclopedia, pet care guide, AI animals, dogs cats birds reptiles, Pawpedia, Shubham, animal facts India" />
+  <meta name="author" content="Shubham" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ Open Graph (WhatsApp, Facebook preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pawpedia-flax.vercel.app/" />
+  <meta property="og:title" content="Pawpedia — AI Animal Encyclopedia | Built by Shubham" />
+  <meta property="og:description"
+    content="Explore 105+ animals with AI-powered care guides. Dogs, cats, birds, reptiles, marine life and more. Built by Shubham." />
+  <meta property="og:image" content="https://pawpedia-flax.vercel.app/og-image.png" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pawpedia — AI Animal Encyclopedia | Built by Shubham" />
+  <meta name="twitter:description" content="Explore 105+ animals with AI-powered care guides. Built by Shubham." />
+  <meta name="twitter:image" content="https://pawpedia-flax.vercel.app/og-image.png" />
+
+  <!-- ✅ Canonical URL -->
+  <link rel="canonical" href="https://pawpedia-flax.vercel.app/" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+
+  <!-- ✅ Schema.org Structured Data (Google rich results) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Pawpedia",
+      "url": "https://pawpedia-flax.vercel.app/",
+      "description": "AI-powered animal encyclopedia with 105+ animals built by Shubham",
+      "author": {
+        "@type": "Person",
+        "name": "Shubham",
+        "url": "https://github.com/shubham-nov06"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://pawpedia-flax.vercel.app/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
